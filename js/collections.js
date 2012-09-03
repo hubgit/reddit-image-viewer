@@ -10,7 +10,7 @@ Collections.Images = Backbone.Collection.extend({
 			after: this.after,
 		};
 
-		return "http://www.reddit.com/r/" + this.getFeedFromHash() + ".json?" + $.param(params);
+		return "http://www.reddit.com/" + this.getFeedFromHash() + ".json?" + $.param(params);
 	},
 
 	parse: function(data) {
@@ -29,6 +29,6 @@ Collections.Images = Backbone.Collection.extend({
 
 	getFeedFromHash: function() {
         var hash = window.location.hash.replace(/^#/, "");
-        return hash ? hash : "awww";
+        return hash ? hash : "r/awww";
     }
 });
