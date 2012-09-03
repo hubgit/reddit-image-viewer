@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Reddit Image Viewer</title>
+
+<!-- stylesheets -->
+
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/pagination.css">
+<link rel="stylesheet" href="css/viewer.css">
+<link rel="stylesheet" href="css/item.css">
+
+<link rel="stylesheet" media="screen and (max-width: 700px)" href="css/thin.css">
+
+<!-- scripts -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="vendor/jquery/jquery.inview.js"></script>
+<script src="vendor/jquery/jquery.scrollIntoView.min.js"></script>
+
+<script src="vendor/handlebars.js"></script>
+<script src="vendor/underscore.js"></script>
+<script src="vendor/backbone.js"></script>
+
+<script src="js/templates.js"></script>
+
+<script src="js/models.js"></script>
+<script src="js/collections.js"></script>
+<script src="js/views.js"></script>
+<script src="js/app.js"></script>
+
+<!-- templates -->
+
+<script type="text/html" data-template="Image">
+	<a href="{{url}}"><img src="{{thumbnail}}">{{#if title}}<div class="title">{{title}}</div>{{/if}}</a></script>
+
+<script type="text/html" data-template="Viewer">
+	{{#if title}}<a href="http://reddit.com{{permalink}}" target="_new" class="title">{{title}}</a>{{/if}}
+	<img src="{{url}}">
+</script>

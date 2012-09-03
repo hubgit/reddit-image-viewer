@@ -1,0 +1,20 @@
+a[rel=next] {
+	display: block;
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+a[rel=next]:hover {
+	background: #447;
+}
+
+a[rel=next]:after {
+	content: "More...";
+}
+
+a[rel=next].loading:after {
+	content: "Loading...";
+}

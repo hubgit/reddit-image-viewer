@@ -1,0 +1,17 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0 auto;
+	background: #4D4D4D;
+	color: #e6e6e6;
+	font-family: Helvetica, sans-serif;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}

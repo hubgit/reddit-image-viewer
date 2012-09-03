@@ -1,0 +1,49 @@
+.item {
+  	display: inline-block;
+  	margin: 10px;
+}
+
+.item a {
+	display: block;
+	position: relative;
+}
+
+.item img {
+	height: 70px;
+	width: 70px;
+	opacity: 0;
+	box-shadow: 0 0 10px #000;
+	transition-property: opacity;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-in;
+}
+
+.item img.loaded {
+	opacity: 1.0;
+}
+
+.item .title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 160px;
+	max-height: 150px;
+	font-size: 13px;
+	line-height: 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 5px;
+	box-sizing: border-box;
+	display: none;
+	background: #222;
+	text-shadow: 0 1px 1px black;
+	z-index: 10;
+}
+
+.item a:hover .title,
+.item.selected .title {
+	display: block;
+}

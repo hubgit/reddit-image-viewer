@@ -1,0 +1,39 @@
+.noscroll {
+	overflow: hidden;
+}
+
+.noscroll .collection {
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+}
+
+#viewer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+	text-align: left;
+	overflow-y: scroll;
+	cursor: crosshair;
+}
+
+#viewer .title {
+	display: block;
+	text-align: left;
+	margin: 20px 30px 10px;
+	max-width: 90%;
+	font-size: 120%;
+	color: #eee;
+}
+
+#viewer img {
+	display: block;
+	max-width: 600px;
+	height: auto;
+	width: auto;
+	margin: 0 30px 20px;
+	box-shadow: 0 0 10px black;
+}
