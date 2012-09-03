@@ -18,6 +18,7 @@
 	text-align: left;
 	overflow-y: scroll;
 	cursor: crosshair;
+	z-index: 50;
 }
 
 #viewer .title {
